@@ -1,5 +1,5 @@
-Proyek Laravel  -   Diary
-Proyek berguna sebagai penggganti catatan dengan buku, jadi anda bisa menulis catatan harian disini
+Proyek Laravel  -   Diary ||
+Proyek ini berfungsi sebagai penggganti catatan dengan buku fisik, jadi anda bisa menulis catatan harian disini, ini meminimalisir rusaknya buku karena dimakan rayap atau hilangnya buku
 - Requirement : 
     composer 2,
     php,
