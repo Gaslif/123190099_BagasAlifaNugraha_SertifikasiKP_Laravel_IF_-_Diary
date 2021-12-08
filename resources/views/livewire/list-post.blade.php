@@ -3,8 +3,8 @@
         <div class="px-4 py-2 mt-2 bg-white shadow-xl sm:rounded-lg">
             <div>
                 <img class="w-full h-full object-center object-cover">{{ $post->user->image }}  {{-- *GAGAL mencoba menampilkan foto yang di up di database --}}
-                <span class="text-xl font-bold"> {{ $post->user->name }}</span> {{-- Mengambil isi dati Nama user --}}
-                <span class="text-sm">{{ $post->created_at->diffForHumans() }}</span>
+                <span class="text-xl font-bold"> {{ $post->user->name }}</span> {{-- Mengambil isi dati Nama userPost --}}
+                <span class="text-sm">{{ $post->created_at->diffForHumans() }}</span>   {{-- membuat tanggal terakhir di buat --}}
                 <button
                     wire:click="showUpdateForm({{ $post->id }})"    {{-- ketika di klik akan menuju ke update --}}
                     type="button" class="inline-flex items-center px-3 py-2 border
@@ -14,7 +14,7 @@
                 </button>
                 <button
                 onclick="return confirm('Apakah anda yakin ingin menghapus post ini?') ||
-                event.stopImmediatePropagation()" {{-- Confirmasi apakah yakin ingin mendelete post --}}
+                event.stopImmediatePropagation()"                           {{-- Confirmasi apakah yakin ingin mendelete post --}}
                     wire:click="delete({{ $post->id }})"
                     type="button" class="inline-flex items-center px-3 py-1 border
                     border-transparent rounded-md shadow-sm text-sm font-medium text-white text-base bg-red-600  
@@ -23,10 +23,10 @@
                 </button>
             </div>
             <div>
-                @if ($updateStateId !== $post->id)
+                @if ($updateStateId !== $post->id)  {{-- jika id tidak sama dengan postid --}}
                     <span>{{ $post->body }}</span>      
                 @endif
-                @if ($updateStateId === $post->id)
+                @if ($updateStateId === $post->id)  {{-- jika sesuai maka akan melanjutkan body yang telah di post dengan id tersebut --}}
                     <textarea
                         wire:model="body"
                         class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 

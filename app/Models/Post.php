@@ -15,7 +15,7 @@ class Post extends Model
         // 'image'  di comment karena tidak akan ada eror terakhir di coba
     ];
 
-    public function user()
+    public function user()  //menyambungkan
     {
         return $this->belongsTo(User::class);
     }

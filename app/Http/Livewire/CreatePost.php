@@ -32,6 +32,6 @@ class CreatePost extends Component
         ]);
 
         $this->body = "";  //mengosongkan body ketika di submit
-        $this->emit('posted'); 
+        $this->emit('posted');  //listen ini
     }
 }
