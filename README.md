@@ -1,3 +1,23 @@
+Proyek Laravel  -   Diary
+Proyek berguna sebagai penggganti catatan dengan buku, jadi anda bisa menulis catatan harian disini
+- Requirement : 
+    composer 2,
+    php,
+    nodejs,
+    laravel,
+    livewire - jetstream,
+    vscode,
+    mysql,
+    git bash
+    
+- Fitur :
+    Register,
+    Login,
+    lihat profile,
+    Post diary, edit, delete, 
+    melihat diary yang sudah pernah dibuat
+    
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
